@@ -63,3 +63,9 @@ let precomin = [
   { nome: 'Celular', preco: 500 },
   { nome: 'Caneca', preco: 10 }
 ];
+
+const encontrarProdutos = (prod, min) => {
+  return prod.filter(prod => prod.preco >= min);
+}
+let produtosFiltrados = encontrarProdutos(produtos, 50);
+console.log(produtosFiltrados);
